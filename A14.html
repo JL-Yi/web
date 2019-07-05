@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A14</title>
+
+  <style>
+    #outline {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border: 1px solid gray;
+      border: 0.5px solid #bfbfbf;
+      border-radius: 0.5em;
+      width: 360px;
+      height: 640px;
+      box-shadow: 2px 2px 2px 2px #d9d9d9;
+    }
+
+    .img-outline {
+      display: flex;
+      justify-content: center;
+      border: 1px solid none;
+      height: 450px;
+      width: 360px;
+      border: 1px solid none;
+      position: relative;
+      margin-bottom: auto;
+    }
+
+    .img{
+      height: 430px;
+      width:350px;
+    }
+
+    .button-re {
+      background: url("button-re.png")
+      no-repeat;
+      border: none;
+      width: 55px;
+      height: 55px;
+      size: 80%;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+
+    .button-next {
+      background: url("button-next.png")
+      no-repeat;
+      border: none;
+      width: 55px;
+      height: 55px;
+      size: 80%;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="outline">
+
+    <div class="img-outline">
+      <img src="a14.png" class="img">
+    </div>
+    <audio controls="controls">
+      <source src="A14chantsong.mp3" type="audio/mp3" />
+    </audio>
+
+    <div id="button-box">
+      <button class="button-re" onclick="pageReplace1()"></button>
+      <button class="button-next"
+      onclick="pageReplace2()"></button>
+    </div>
+
+    <script>
+  function pageReplace1() {
+    location.replace('A11.html');
+  }
+  function pageReplace2() {
+    location.replace('A17.html');
+  }
+    </script>
+
+</body>
+
+</html>
